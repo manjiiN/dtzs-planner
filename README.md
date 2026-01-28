@@ -14,7 +14,7 @@ This is a web-based planner application.
 ## File Structure
 
 - `index.html`: Main HTML file for the planner interface.
-- `css/style.css`: Stylesheet for the application.
+- `css/main.css`: Stylesheet for the application.
 - `js/script.js`: JavaScript file for functionality.
 - `data/`: Folder for storing data files (e.g., tasks.json).
 
