@@ -1,4 +1,46 @@
-# dtzs-planner
+
+# DTZS Planner
+
+This is a web-based planner application.
+
+## Features to Implement
+
+- **Calendar View**: Display a monthly calendar with the ability to navigate between months.
+- **Task Management**: Add, edit, delete, and mark tasks as completed.
+- **Data Persistence**: Store tasks locally using localStorage or JSON files.
+- **User Interface**: Responsive design with intuitive navigation.
+- **Search and Filter**: Allow users to search tasks and filter by criteria.
+
+## File Structure
+
+- `index.html`: Main HTML file for the planner interface.
+- `css/style.css`: Stylesheet for the application.
+- `js/script.js`: JavaScript file for functionality.
+- `data/`: Folder for storing data files (e.g., tasks.json).
+
+## Getting Started
+
+1. Open `index.html` in a web browser.
+2. Implement the TODO items in the code files.
+3. Add more features as needed.
+
+## TODO
+
+- Complete the HTML structure in `index.html`.
+- Add CSS rules in `style.css` for styling.
+- Implement JavaScript functions in `script.js` for planner logic.
+
+
+
+
+
+
+
+
+
+
+
+
 mainly a website planner with plans of making it a desktop widget like planner
 
 Due to my constant procrastination i have decided to try and make a planner which will also work as an executable app for both desktop and phone in the future if it goes well. I think if i can make this project in a good way with the theme that im unsure of fully making maybe ill add multiple choices to choose so its more presonalized for people to use. 
