@@ -9,26 +9,58 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f5f5f5;
+    color: #666666;
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body.dark {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #0a0a0a;
+    color: #ffffff;
 }
 
 /* Header styles */
 header {
-    background-color: #343a40;
+    background-color: #808080;
     color: white;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+#logo-title {
+    background: linear-gradient(135deg, #333333, #555555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+body.dark #logo-title {
+    background: linear-gradient(135deg, #1e3a5f, #2c5282);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#logo-title:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(51, 51, 51, 0.5);
+}
+
+body.dark #logo-title:hover {
+    text-shadow: 0 0 10px rgba(30, 58, 95, 0.5);
 }
 
 body.dark header {
@@ -38,77 +70,96 @@ body.dark header {
 
 /* Main content styles */
 main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Sub-navigation styles */
 #sub-nav {
-    text-align: center;
-    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #sub-nav button {
     margin: 0 0.5rem;
+    min-width: 100px;
 }
 
 /* Planner container styles */
 #planner-container {
-    background-color: white;
-    border-radius: 8px;
+    max-width: 1200px;
+    margin: 2rem;
     padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease;
 }
 
 body.dark #planner-container {
-    background-color: #2c2c2c;
+    background-color: #1a1a1a;
     box-shadow: 0 2px 10px rgba(255,255,255,0.1);
 }
 
 /* Button styles */
 button {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #333333, #555555);
     color: white;
-    border: none;
+    border: 1px solid #333333;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     margin: 0.5rem;
-    width: 120px;
     text-align: center;
 }
 
 button:hover {
-    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(51, 51, 51, 0.4);
+    border-color: #555555;
 }
 
 button:active {
-    background-color: #004085;
+    background-color: #222222;
 }
 
-button.secondary {
-    background-color: #6c757d;
+#dark-mode-toggle {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button.secondary:hover {
-    background-color: #545b62;
+body.dark button {
+    background: linear-gradient(135deg, #1e3a5f, #2c5282);
+    color: white;
+    border: 1px solid #1e3a5f;
 }
 
-button.danger {
-    background-color: #dc3545;
+body.dark button:hover {
+    box-shadow: 0 10px 25px rgba(30, 58, 95, 0.4);
+    border-color: #2c5282;
 }
 
-button.danger:hover {
-    background-color: #c82333;
+body.dark button:active {
+    background-color: #0f2a47;
 }
 
 /* Footer styles */
 footer {
-    background-color: #343a40;
+    background-color: #808080;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -134,5 +185,3 @@ body.dark footer {
         font-size: 0.9rem;
     }
 }
-
-/* Additional styles as needed for specific planner features */
