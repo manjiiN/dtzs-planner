@@ -18,12 +18,6 @@ This is a web-based planner application.
 - `js/script.js`: JavaScript file for functionality.
 - `data/`: Folder for storing data files (e.g., tasks.json).
 
-## Getting Started
-
-1. Open `index.html` in a web browser.
-2. Implement the TODO items in the code files.
-3. Add more features as needed.
-
 ## TODO
 
 - Complete the HTML structure in `index.html`.
